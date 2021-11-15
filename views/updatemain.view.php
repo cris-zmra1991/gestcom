@@ -172,7 +172,7 @@ The above copyright notice and this permission notice shall be included in all c
                             <td><?php echo $datos["fecha_firma"]; ?></td>
                             <td><?php echo $datos["vigencia"]."&nbsp;".$datos["tipo_vigencia"]; ?></td>
                             <td><?php echo $datos["estado_cont"]; ?></td>
-                            <td><a class="btn btn-info" href="<?php echo "update.php?name=" . $datos["num_proforma"]?>"><i class="fa fa-edit"></i></a></td>
+                            <td><a class="btn btn-info" href="<?php echo "update.php?name=" . $datos["id_cont"]?>"><i class="fa fa-edit"></i></a></td>
 
                       </tr>
                       <?php
