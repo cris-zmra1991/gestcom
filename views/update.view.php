@@ -142,8 +142,6 @@ The above copyright notice and this permission notice shall be included in all c
                 <div class="card-header card-header-info">
                   <h4 class="card-title">Modificar datos de un contrato</h4>
                   <p class="card-category">(Los campos principales no pueden modificarse)</p>
-                  <p class="card-category"><?php echo $name; ?></p>
-                  <p class="card-category"><?php echo $dato['objeto']; ?></p>
                 </div>
                 <div class="card-body">
                   <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
@@ -152,13 +150,15 @@ The above copyright notice and this permission notice shall be included in all c
                       <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Número de proforma</label>
-                          <input type="text" class="form-control" name="nprof" placeholder="<?php echo $name; ?>" disabled>
+                          <input type="text" class="form-control" name="nprof" value="<?php echo $nprof; ?>" disabled>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="bmd-label-floating">Proveedor (*)</label>
-                          <?php foreach($contrato as $dato){ ?><input type="text" class="form-control" name="proveedor" value="<?php echo $dato['proveedor'];?>"><?php } ?>
+                          <?php foreach($nproveedor as $nprov){ ?>
+                            <input type="text" class="form-control" name="proveedor" value="<?php echo $nprov['desc_prov']; ?>" disabled>
+                          <?php } ?>
                         </div>
                       </div>
                       <div class="col-md-3">
@@ -172,7 +172,7 @@ The above copyright notice and this permission notice shall be included in all c
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="bmd-label-floating">Objeto del contrato (*)</label>
-                          <input type="text" class="form-control" name="objeto" value="<?php echo $dato['objeto'];?>" disabled>
+                          <input type="text" class="form-control" name="objeto" value="<?php echo $objeto;?>" disabled>
                         </div>
                       </div>
                     </div>
@@ -180,13 +180,13 @@ The above copyright notice and this permission notice shall be included in all c
                       <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Vigencia del contrato (*)</label>
-                          <input type="text" class="form-control" name="vig" value="<?php echo $dato['vigencia'];?>" disabled>
+                          <input type="text" class="form-control" name="vig" value="<?php echo $vig;?>" disabled>
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                           <label class="bmd-label-floating">Tipo de vigencia (*)</label>
-                          <input type="text" class="form-control" name="tvig" value="<?php echo $dato['tipo_vigencia'];?>" disabled>
+                          <input type="text" class="form-control" name="tvig" value="<?php echo $tvig;?>" disabled>
                         </div>
                       </div>
                       <div class="col-md-3">
