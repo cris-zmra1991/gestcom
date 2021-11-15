@@ -24,7 +24,6 @@ The above copyright notice and this permission notice shall be included in all c
 </head>
 
 <body class="">
-
   <div class="wrapper ">
     <div class="sidebar" data-color="azure" data-background-color="white" data-image="">
       <!--
@@ -56,7 +55,7 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="updatemain.php">
               <i class="fa fa-edit"></i>
               <p>Actualizar contrato</p>
             </a>

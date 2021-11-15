@@ -50,13 +50,13 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
+            <a class="nav-link" href="add.php">
               <i class="fa fa-plus-square"></i>
               <p>Adicionar contratos</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="updatemain.php">
               <i class="fa fa-edit"></i>
               <p>Actualizar contrato</p>
             </a>
